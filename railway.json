@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "gunicorn app:app --timeout 3600 --workers 2",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
