@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-PIXELDRAIN_API_KEY = os.getenv("1a283756-5b5a-45c6-adcb-e0859d6e9d2f")
+PIXELDRAIN_API_KEY = os.getenv("PIXELDRAIN_API_KEY")
 WORDPRESS_UPDATE_URL = os.getenv("WORDPRESS_UPDATE_URL", "https://mehedilogy.com/wp-json/pd/v1/update")
 
 jobs = {}
